@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 
 let randomNum = Math.floor(Math.random() * 100) + 1;
 
@@ -63,8 +64,6 @@ export default function Game1() {
         >
             <h1>Sayı Tahmin Oyunu - 1</h1>
             <br />
-            <p>Oyunun amacı rastgele belirlenmiş bir sayıyı 7 tahminde bulabilmektir.</p>
-            <br />
             <input disabled={disabled} value={userGuess} type="text" onChange={handlerValueChange} />
             <br />
             <button disabled={disabled} onClick={submitHandler}>Tahmin Et</button>
@@ -81,6 +80,13 @@ export default function Game1() {
                         return <span key={index}>{item}, { }</span>;
                     })}
                 </p>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/Home">Anasayfaya Don</Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );
