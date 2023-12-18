@@ -22,7 +22,8 @@ export default function Menu() {
                     <li>
                         <Link to="/Game2">Oyun 2</Link>
                     </li>
-                    <p>Oyunun amacı rastgele belirlenmiş 0-100 aralıgında bir sayıyı 7 tahminde bulabilmektir.</p>
+                    <p>Oyunun amacı rastgele belirlenmiş ve 0-100 aralıgında olan bir sayıyı 10 saniye içerisinde bulabilmektir.</p>
+                    <p>Süren bittiginde son bir tahmin hakkın olur.</p>
                 </ul>
             </nav>
         </div>
